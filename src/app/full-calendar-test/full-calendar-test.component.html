@@ -1,0 +1,12 @@
+<div class="container">
+
+  <full-calendar
+      #calendar
+      [events]="events"
+      [plugins]="calendarPlugins"
+      (eventRender)="eventRender($event)"
+      (dateClick)="handleDateClick($event)"
+  >
+  </full-calendar>
+
+</div>
